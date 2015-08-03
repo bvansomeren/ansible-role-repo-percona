@@ -1,7 +1,5 @@
 ---
-# tasks file for bvansomeren.repo-percona
-#
----
+
 - name: Install percona repo.
   yum:
     name: "{{ percona_repo_url }}"
