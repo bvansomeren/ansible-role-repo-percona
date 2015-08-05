@@ -1,8 +1,8 @@
 ---
 galaxy_info:
-  author: your name
+  author: Barry van Someren
   description: 
-  company: your company (optional)
+  company: CoffeeSprout
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
   # issue_tracker_url: http://example.com/issue/tracker
@@ -13,17 +13,17 @@ galaxy_info:
   # - GPLv3
   # - Apache
   # - CC-BY
-  license: license (GPLv2, CC-BY, etc)
-  min_ansible_version: 1.2
+  license: MIT
+  min_ansible_version: 1.8
   #
   # Below are all platforms currently available. Just uncomment
   # the ones that apply to your role. If you don't see your 
   # platform on this list, let us know and we'll get it added!
   #
   #platforms:
-  #- name: EL
-  #  versions:
-  #  - all
+  - name: EL
+    versions:
+    - all
   #  - 5
   #  - 6
   #  - 7
@@ -123,9 +123,9 @@ galaxy_info:
   #- cloud:gce
   #- cloud:rax
   #- clustering
-  #- database
+  - database
   #- database:nosql
-  #- database:sql
+  - database:sql
   #- development
   #- monitoring
   #- networking
