@@ -1,11 +1,7 @@
 ---
 
-- name: Install percona repo.
-  yum:
-    name: "{{ percona_repo_url }}"
-    state: present
+- include: install-Debian.yml
+  when: ansible_os_family == 'Debian'
 
-- name: Import percona GPG key.
-  rpm_key:
-    key: "{{ percona_repo_gpg_key_url }}"
-    state: present
+- include: install-RedHat.yml
+  when: ansible_os_family == 'RedHat'

@@ -1,0 +1,11 @@
+---
+
+- name: Adding Percona APT key
+  apt_key:
+    keyserver: keyserver.ubuntu.com
+    id: 1C4CBDCDCD2EFD2A
+
+- name: Add Percona APT repository
+  apt_repository:
+    repo: "deb http://repo.percona.com/apt {{ ansible_distribution_release }}  main"
+    update_cache: yes
